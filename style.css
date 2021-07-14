@@ -154,6 +154,7 @@ footer .fab{
     .highlight1-img img{
         width: 328px;
         height: 248px;
+        margin-top: 20px;
     }
     .footer-img img{
         width: 150px;
@@ -162,28 +163,32 @@ footer .fab{
 }
 /* tablet responsive */
 @media only screen and (min-width: 669px) and (max-width: 1024px) {
-    .container{
-        width: 100%;
-    }
-    .players{
-        grid-template-columns: repeat(2,1fr);
-        margin: 25px;
-    }
-    .highlight1{
-        grid-template-columns: repeat(2,1fr);
-    }
+    
     .banner img{
         margin-top: 60px;
         width: 329px;
         height: 260px;
+    }
+    .players{
+        grid-template-columns: repeat(2,1fr);
+        margin: 25px;
+        
+    }
+    .highlight1{
+        grid-template-columns: repeat(2,1fr);
     }
     .highlight1-img img{
         width: 328px;
         height: 248px;
     }
     .highligth2{
-        grid-template-columns: repeat(2,1fr);
-        width: 328px;
-        height: 248px;
+        grid-template-columns: repeat(1,1fr);  
+    }
+    .sponsor{
+        width: 100%;
+    }
+    .footer-img img{
+        width: 150px;
+        height: 63px;
     }
 }
