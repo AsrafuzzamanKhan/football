@@ -84,6 +84,13 @@ a.button span{
     padding: 0 5% 5% 5%;
     margin: 20px 20px;
 }
+.highlight1-info h1{
+    font-size: 35px;
+    font-weight: 700;
+}
+.highlight1-info p{
+    text-align: justify;
+}
 .highlight1-img img{
     width: 567px;
     height: 427px;
