@@ -51,7 +51,7 @@ a.button span{
 .players{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    margin: 70px 170px 70px 150px;
+    margin: 70px 170px 70px 160px;
     grid-row-gap: 30px;
     grid-column-gap: 30px ;
 }
@@ -155,6 +155,9 @@ footer .fab{
     .container, .players, .highlight1, .highligth2{
         grid-template-columns: repeat(1,1fr);
     }
+    .players{
+        justify-content: center;
+    }
     .container .banner{
         margin-top: 40px;
     }
@@ -167,6 +170,7 @@ footer .fab{
         height: 248px;
         margin-top: 20px;
     }
+    
     .footer-img img{
         width: 150px;
         height: 63px;
@@ -197,6 +201,7 @@ footer .fab{
     .highligth2{
         grid-template-columns: repeat(1,1fr);  
     }
+
     .sponsor{
         width: 100%;
     }
