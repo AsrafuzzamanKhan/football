@@ -1,0 +1,163 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+}
+/* header content start */
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: #2D25A0;
+    background-repeat: repeat-x;
+    padding: 5%;
+    
+}
+.container .banner img{
+    margin-right: 20px;
+    transition: transform 3s;
+}
+.container:hover .banner img{
+    background-color: yellow;
+    transform: rotateY(360deg);
+}
+.header h1{
+    line-height: 60px;
+    font-size: 60px;
+    color: white;
+    font-weight: 700;
+}
+a.button{
+    text-decoration: none;
+    color: white;
+    padding: 10px 40px;
+    background-color: #E02C6D;
+    align-items: center;
+}
+a.button span{
+    margin-left: 8px;
+}
+.banner img{
+        width: 556px;
+        height: 438px;
+}
+
+/* header content start */
+
+/* players start */
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 70px 170px 70px 150px;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px ;
+}
+.player{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 15px;
+}
+.player-img img{
+    width: 300px;
+    height: 256px;
+}
+.player-info h1{
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.player-info p{
+    color: #6C6C6C;
+    font-size: 16px;
+    text-align: justify;
+}
+
+
+/* players end */
+
+/* highlight start*/
+.highlight1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 20px;
+    padding: 0 5% 5% 5%;
+    margin: 20px 20px;
+}
+.highlight1-img img{
+    width: 567px;
+    height: 427px;
+}
+.highligth2 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 20px;
+    padding: 2%;
+    background-color: lavender;
+    
+}
+iframe{
+    width: 400px;
+    height: 300px;
+    margin-left: 10px;
+}
+/* hightlight end */
+/* sopnsor */
+.sponsor h3{
+    margin: 40px 0 0 20px;
+}
+.sponsor img{
+    width: 100%;
+    margin-top: -20px;
+}
+/* footer start */
+footer{
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0.2,0,0,0.2);
+}
+.footer-img img{
+    width: 483px;
+    height: 110px;
+}
+footer .fab{
+    
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    color: #969BAB;
+    margin-right: 14px;
+    text-align: center;
+    line-height: 30px;
+    background: #d6d8df;  
+}
+.copyright{
+    font-size: 18px;
+}
+/* mobile responsive */
+@media only screen and (max-width: 668px )   {
+    
+    .container, .players, .highlight1, .highligth2{
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+    }
+    .container .banner{
+        margin-top: 40px;
+    }
+    .banner img{
+        width: 329px;
+        height: 260px;
+}
+    .highlight1-img img{
+        width: 328px;
+        height: 248px;
+    }
+}
+/* tablet responsive */
+@media only screen and (min-width: 669px) and (max-width: 1024px) {
+    .container{
+        width: 100%;
+    }
+    .players, .highlight1, .highligth2{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
