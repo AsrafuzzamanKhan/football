@@ -4,6 +4,8 @@
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0px;
+    padding: 0px;
+   
 }
 /* header content start */
 
@@ -62,6 +64,7 @@ a.button span{
 .player-img img{
     width: 300px;
     height: 256px;
+    border-radius: 10px;
 }
 .player-info h1{
     font-size: 28px;
@@ -95,17 +98,17 @@ a.button span{
     width: 567px;
     height: 427px;
 }
-.highligth2 {
+.highlight2 {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 20px;
-    padding: 2%;
+    padding: 4%;
     background-color: lavender;
     
 }
+
 iframe{
-    width: 400px;
-    height: 300px;
+    width: 85%;
     margin-left: 10px;
 }
 /* hightlight end */
@@ -152,7 +155,7 @@ footer .fab{
 
 /* mobile responsive */
 @media only screen and (max-width: 668px )   {
-    .container, .players, .highlight1, .highligth2{
+    .container, .players, .highlight1, .highlight2{
         grid-template-columns: repeat(1,1fr);
     }
     .players{
@@ -198,7 +201,7 @@ footer .fab{
         height: 270px;
         margin-top: 50px;
     }
-    .highligth2{
+    .highlight2{
         grid-template-columns: repeat(1,1fr);  
     }
 
